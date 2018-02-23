@@ -1,0 +1,19 @@
+
+
+{
+  "version": "1.0",
+  "icon": "icon.png",
+  "commands" : [
+    {
+      "name" : "Attribute Export",
+      "identifier" : "attribute-export",
+      "script" : "./attribute-export.js",
+      "handlers" : {
+        "run": "default",
+        "actions" : {
+          "ExportSlices": "onExportSlices"
+        }
+      }
+    }
+  ]
+}

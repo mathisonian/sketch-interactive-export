@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Attribute Export",
+      "identifier": "attribute-export",
+      "script": "attribute-export.js",
+      "handlers": {
+        "run": "default",
+        "actions": {
+          "ExportSlices": "onExportSlices"
+        }
+      }
+    }
+  ],
+  "name": "attribute-export",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "Matthew Conlen",
+  "authorEmail": "mc@mathisonian.com\n"
+}
