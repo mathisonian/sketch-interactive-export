@@ -14,7 +14,7 @@
       }
     }
   ],
-  "name": "attribute-export",
+  "name": "interactive-export",
   "disableCocoaScriptPreprocessor": true,
   "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
   "author": "Matthew Conlen",

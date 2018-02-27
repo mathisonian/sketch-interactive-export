@@ -1,13 +1,13 @@
 {
-  "name": "attribute-export",
+  "name": "interactive-export",
   "version": "0.1.0",
   "engines": {
     "sketch": ">=3.0"
   },
   "skpm": {
-    "name": "attribute-export",
+    "name": "interactive-export",
     "manifest": "src/manifest.json",
-    "main": "attribute-export.sketchplugin",
+    "main": "interactive-export.sketchplugin",
     "assets": [
       "assets/**/*"
     ]
