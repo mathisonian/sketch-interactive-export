@@ -35,10 +35,6 @@ function onExportSlices(context) {
 		page.containedLayers().forEach((layer) => handleLayer(layer));
 	});
 
-	log('LAYERS:')
-	log('________')
-	log(layerNames);
-
 	for (var i=0; i < exp.count(); i++) {
 		var currentExport = exp.objectAtIndex(i)
 		if (currentExport.request.format() == 'svg') {
@@ -58,17 +54,12 @@ function onExportSlices(context) {
 		}
 	}
 
-
-  saveJSON({"blah": false}, '/Users/mathisonian/projects/attribute-export/test3.json');
 }
 
 function run(context) {
-	// log(context.actionContext);
-  saveJSON({"blah": false}, '/Users/mathisonian/projects/attribute-export/test3.json');
 }
 
 
 export { run, run as onRun, onExportSlices, onExportSlices as exportSlices };
 export default function(context) {
-	saveJSON({"blah": false}, '/Users/mathisonian/projects/attribute-export/test3.json');
 }

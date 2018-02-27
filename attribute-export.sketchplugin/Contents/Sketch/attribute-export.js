@@ -76,9 +76,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-exports['default'] = function (context) {
-	saveJSON({ "blah": false }, '/Users/mathisonian/projects/attribute-export/test3.json');
-};
+exports['default'] = function (context) {};
 
 function saveJSON(obj, filePath) {
 	obj = JSON.parse(JSON.stringify(obj));
@@ -118,10 +116,6 @@ function onExportSlices(context) {
 		});
 	});
 
-	log('LAYERS:');
-	log('________');
-	log(layerNames);
-
 	for (var i = 0; i < exp.count(); i++) {
 		var currentExport = exp.objectAtIndex(i);
 		if (currentExport.request.format() == 'svg') {
@@ -140,14 +134,9 @@ function onExportSlices(context) {
 			NSString.stringWithString(svgString).writeToFile_atomically_encoding_error(path, true, NSUTF8StringEncoding, nil);
 		}
 	}
-
-	saveJSON({ "blah": false }, '/Users/mathisonian/projects/attribute-export/test3.json');
 }
 
-function run(context) {
-	// log(context.actionContext);
-	saveJSON({ "blah": false }, '/Users/mathisonian/projects/attribute-export/test3.json');
-}
+function run(context) {}
 
 exports.run = run;
 exports.onRun = run;
