@@ -25,7 +25,7 @@ with the class disapper:
 Becomes
 
 
-```
+```html
 <?xml version="1.0" encoding="UTF-8"?>
 <svg  viewBox="0 0 1338 1142" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
@@ -66,7 +66,7 @@ We can use D3 to select portions of the exported SVG and dynamically add interac
 code changes the color of the rectangles with the `color-change` class, and fades out the rectangle with
 the `disappear` class when a user clicks them.
 
-```
+```js
 const d3 = require('d3');
 const fs = require('fs');
 
