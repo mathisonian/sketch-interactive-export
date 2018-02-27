@@ -4,6 +4,10 @@
 This is a sketch plugin designed to make it easy to use JavaScript (e.g. D3) to add
 interactivity to SVGs created with sketch.
 
+## Installing
+
+Go to [the release page](https://github.com/mathisonian/sketch-interactive-export/releases) and download the latest ZIP file. Unip it and double click the `.sketchplugin` file to add it to sketch.
+
 ## What does this do?
 
 This plugin does two main things:
