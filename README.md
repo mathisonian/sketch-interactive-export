@@ -26,7 +26,7 @@ with the class `disappear`:
 
 ![sketch example](./assets/sketch-readme.png)
 
-Becomes
+When exported to SVG, this becomes
 
 
 ```html
