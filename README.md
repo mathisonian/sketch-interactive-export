@@ -6,7 +6,7 @@ interactivity to SVGs created with sketch.
 
 ## Installing
 
-Go to [the release page](https://github.com/mathisonian/sketch-interactive-export/releases) and download the latest ZIP file. Unip it and double click the `.sketchplugin` file to add it to sketch.
+Go to [the release page](https://github.com/mathisonian/sketch-interactive-export/releases) and download the latest ZIP file. Unzip it and double click the `.sketchplugin` file to add it to sketch.
 
 ## What does this do?
 
