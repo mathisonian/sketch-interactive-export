@@ -22,7 +22,7 @@ This plugin does two main things:
 ### Designing in sketch
 
 For example, here is a simple Sketch that shows three rectanges, two with the class `color-change` and one
-with the class disapper:
+with the class `disappear`:
 
 ![sketch example](./assets/sketch-readme.png)
 
