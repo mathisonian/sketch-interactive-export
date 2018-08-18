@@ -45,7 +45,12 @@ function onExportSlices(context) {
 			layerNames.forEach((layerName) => {
 				var idString = nameToId(layerName);
 				if (svgString.indexOf('id="' + idString + '"') > -1) {
-					svgString = svgString.replace(new RegExp('id="' + idString + '"', 'g'), 'class="' + getClassFromName(layerName) + '" id="' + idString.replace(getClassFromName(layerName).split(' ').join('.'), '').replace('.', '') + '"');
+					let className = getClassFromName(layerName);
+					let newId = idString.replace(getClassFromName(layerName).split(' ').join('.'), '').replace('.', '');
+					let replace = '';
+					if (className) replace += 'class="' + className + '"';
+					if (newId) replace += ' id="' + newId + '"';
+					svgString = svgString.replace(new RegExp('id="' + idString + '"', 'g'), replace);
 				}
 			})
 
