@@ -70,7 +70,10 @@ var exports =
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
@@ -126,7 +129,12 @@ function onExportSlices(context) {
 			layerNames.forEach(function (layerName) {
 				var idString = nameToId(layerName);
 				if (svgString.indexOf('id="' + idString + '"') > -1) {
-					svgString = svgString.replace(new RegExp('id="' + idString + '"', 'g'), 'class="' + getClassFromName(layerName) + '" id="' + idString.replace(getClassFromName(layerName).split(' ').join('.'), '').replace('.', '') + '"');
+					var className = getClassFromName(layerName);
+					var newId = idString.replace(getClassFromName(layerName).split(' ').join('.'), '').replace('.', '');
+					var replace = '';
+					if (className) replace += 'class="' + className + '"';
+					if (newId) replace += ' id="' + newId + '"';
+					svgString = svgString.replace(new RegExp('id="' + idString + '"', 'g'), replace);
 				}
 			});
 
